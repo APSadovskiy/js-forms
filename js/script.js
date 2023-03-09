@@ -14,14 +14,14 @@ document.getElementById('input_fot').addEventListener('keydown'
 	}
 ) 
 
-/* 	document.getElementById('input_fot').oninput = e =>{
+	document.getElementById('input_fot').oninput = e =>{
 	if(mainFormInput_fot.value.split('.')[1].length>2||mainFormInput_fot.value.split(',')[1].length>2 ) {e.target.value=mainFormInput_fot.value.slice(0,-1);	}
-}  */
+} 
 
 
 mainForm.oninput = e => {
 	//TODO присвоение 0 при пустом input_fot
-	//if (mainFormInput_fot.value === "") mainFormInput_fot.value = 0
+	if (mainFormInput_fot.value === "") mainFormInput_fot.value = 0
 
 	mainFormInput_fot.value=String(mainFormInput_fot.value).replace(',','.');
 	mainForm.input_proch.value=String(mainForm.input_proch.value).replace(',','.');
