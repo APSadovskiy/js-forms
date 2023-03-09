@@ -7,16 +7,16 @@ document.getElementById('input_fot').addEventListener('keydown'
 (ev)=> {
 
 	//TODO условие ввода в input
-/*  	if(ev.key.length==1 && (ev.key<'0' || ev.key>'9' ))  if(ev.key != '.') if(ev.key != ',')  ev.preventDefault();
+ 	if(ev.key.length==1 && (ev.key<'0' || ev.key>'9' ))  if(ev.key != '.') if(ev.key != ',')  ev.preventDefault();
  	if(ev.key == '-')  ev.preventDefault();
 	
- */
+
 	}
 ) 
 
-	document.getElementById('input_fot').oninput = e =>{
+/* 	document.getElementById('input_fot').oninput = e =>{
 	if(mainFormInput_fot.value.split('.')[1].length>2||mainFormInput_fot.value.split(',')[1].length>2 ) {e.target.value=mainFormInput_fot.value.slice(0,-1);	}
-} 
+}  */
 
 
 mainForm.oninput = e => {
